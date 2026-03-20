@@ -6,7 +6,7 @@ export default function Home() {
 
 
     return (
-        <div className="text-muted">
+        <div className="text-muted page">
             <div className="header">
                 <h3 className="title fw-bolder">Welcome to ShopHup</h3>
                 <p className="sub-title">Discover amazing products at great prices</p>

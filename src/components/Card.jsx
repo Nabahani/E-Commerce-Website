@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function Card({ product }) {
     return (
         <div className="col-md-6 col-lg-4">
@@ -10,7 +12,7 @@ export default function Card({ product }) {
                     <h5 className="product-details fs-6">{product.name}</h5>
                     <p className="product-details text-primary">${product.price}</p>
 
-                    <button className="btn btn-secondary btn-sm me-2">View Details</button>
+                    <Link to={`/product/${product.id}`} className="btn btn-secondary btn-sm me-2">View Details</Link>
                     <button className="btn btn-primary btn-sm">Add to card</button>
                 </div>
             </div>
