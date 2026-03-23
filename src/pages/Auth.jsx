@@ -49,7 +49,7 @@ export default function Auth() {
                     </div>
 
                     <div className="mb-3">
-                        <label htmlFor="password" className="form-label">password:</label>
+                        <label htmlFor="password" className="form-label">Password:</label>
                         <div className="input-group">
                             <i className="bi bi-unlock2-fill input-group-text"></i>
                             <input type="password" id="password" placeholder="Enter your password" className="form-control" {...register("password", {

@@ -45,7 +45,7 @@ export default function CartProvider({ children }) {
     function totalPrice() {
         return cartItems.reduce((total, item) => {
             const currentProduct = getProductById(item.id);
-            return total + currentProduct.price * item.quantity;
+            return currentProduct ? total + currentProduct.price * item.quantity : 0;
         }, 0);
     }
 
