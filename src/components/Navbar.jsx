@@ -14,8 +14,8 @@ export default function Navbar() {
                     <Link className="link text-muted" to={'/checkout'}>Cart</Link>
                 </div>
                 {!user ? <div className="">
-                    <Link to={'/auth'} className="btn btn-sm btn-secondary link-btn px-3" style={{ fontSize: "15px" }}>Login</Link>
-                    <Link to={'/auth'} className="btn btn-sm btn-primary link-btn px-3" style={{ fontSize: "15px" }}>Signup</Link>
+                    <Link to={'/auth?mode=login'} className="btn btn-sm btn-secondary link-btn px-3" style={{ fontSize: "15px" }}>Login</Link>
+                    <Link to={'/auth?mode=signup'} className="btn btn-sm btn-primary link-btn px-3" style={{ fontSize: "15px" }}>Signup</Link>
                 </div> : <div className="">
                     <span className="user-email text-primary">{user.email}</span>
                     <button className="btn btn-sm btn-secondary link-btn px-3" style={{ fontSize: "15px" }} onClick={logOut}>Log Out</button>
